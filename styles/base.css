@@ -1,0 +1,232 @@
+:root {
+    --cream: #f4ecd9;
+    --cream-dark: #e6d8b5;
+    --purple: #4b2980;
+    --purple-deep: #2c1758;
+    --text: #1c1c1c;
+    --white: #ffffff;
+    --border: #b8a878;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: 'Noto Serif', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.55;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: var(--purple);
+}
+
+a:hover {
+    color: var(--purple-deep);
+}
+
+header {
+    background-color: var(--purple);
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    background-color: var(--purple-deep);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 0.85rem 1.25rem;
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--purple);
+    border-bottom-color: var(--cream);
+    color: var(--white);
+}
+
+main {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--cream-dark);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.about-intro p {
+    margin: 0;
+}
+
+.profile-photo {
+    width: 170px;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 1.75rem 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--purple);
+}
+
+.country {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.country p {
+    margin: 0;
+}
+
+.flag {
+    margin: 0;
+    width: 150px;
+    text-align: center;
+}
+
+.flag img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    display: block;
+}
+
+.flag figcaption {
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: var(--text);
+}
+
+.resources {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.resources li {
+    margin-bottom: 0.6rem;
+}
+
+footer {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro,
+    .country {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        border-bottom: 1px solid var(--purple);
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+}

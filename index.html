@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals course home page for Charlie Woollard, a developer from Manchester, England.">
+    <meta name="author" content="Charlie Woollard">
+    <title>WDD 131 – Dynamic Web Fundamentals – Charlie Woollard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/charliewoollard/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&amp;id=p17#p17">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Charlie Woollard</h1>
+
+        <div class="cards">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-body">
+                    <div class="about-intro">
+                        <p>Hi, I am Charlie. I live in Manchester, England, where I work in a developer experience
+                            team at a software company. Outside of work I enjoy hiking in the Peak District and
+                            researching my family history.</p>
+                        <img src="images/profile.jpg" alt="Photo of Charlie Woollard" class="profile-photo" width="269"
+                            height="360">
+                    </div>
+
+                    <h3>Manchester, England</h3>
+
+                    <div class="country">
+                        <figure class="flag">
+                            <img src="images/united-kingdom-flag.png" alt="Flag of the United Kingdom" width="330"
+                                height="165">
+                            <figcaption>Official Flag of the United Kingdom</figcaption>
+                        </figure>
+                        <p>Manchester is a city in the north west of England which is part of the United Kingdom. It is
+                            widely regarded as the birthplace of the Industrial Revolution and is best known today for
+                            its football clubs and the musicians it has produced.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>British Resources</h2>
+                <div class="card-body">
+                    <ul class="resources">
+                        <li><a href="https://www.bbc.co.uk/weather">BBC Weather</a></li>
+                        <li><a href="https://tfl.gov.uk/maps/track/tube">London Underground Tube Map</a></li>
+                        <li><a href="https://www.bbcgoodfood.com/recipes/collection/pie-recipes">Classic Pie Recipes</a>
+                        </li>
+                        <li><a href="https://www.royal.uk/royal-family">The Royal Family</a></li>
+                        <li><a href="https://www.premierleague.com/tables">Premier League Table</a></li>
+                        <li><a href="https://www.gov.uk/">GOV.UK</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Charlie Woollard · Manchester, England</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
