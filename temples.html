@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 – Picture Album of temples of The Church of Jesus Christ of Latter-day Saints, by Charlie Woollard.">
+    <meta name="author" content="Charlie Woollard">
+    <title>WDD 131 – Temple Album – Charlie Woollard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="logo">Temple Album</p>
+        <button id="menu-btn" aria-label="Toggle navigation menu"></button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="album">
+            <figure>
+                <img src="images/preston-temple.jpg" alt="Preston England Temple">
+                <figcaption>Preston England</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/oakland-temple.jpg" alt="Oakland California Temple">
+                <figcaption>Oakland California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/tokyo-temple.jpg" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/feather-river-temple.jpg" alt="Feather River California Temple">
+                <figcaption>Feather River California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/orlando-temple.jpg" alt="Orlando Florida Temple">
+                <figcaption>Orlando Florida</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/fort-lauderdale-temple.jpg" alt="Fort Lauderdale Florida Temple">
+                <figcaption>Fort Lauderdale Florida</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/detroit-temple.jpg" alt="Detroit Michigan Temple">
+                <figcaption>Detroit Michigan</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/coeur-dalene-temple.jpg" alt="Coeur d'Alene Idaho Temple">
+                <figcaption>Coeur d'Alene Idaho</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Charlie Woollard · Manchester, England</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+:root {
+    --brown: #4a3219;
+    --brown-dark: #2e1f0e;
+    --cream: #f5ead2;
+    --text: #1f1a13;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: 'Roboto Serif', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.55;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--brown);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.75rem 1.25rem;
+}
+
+.logo {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#menu-btn {
+    background-color: transparent;
+    border: 1px solid var(--cream);
+    color: var(--white);
+    font-size: 1.6rem;
+    line-height: 1;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#menu-btn::before {
+    content: "\2261";
+}
+
+#menu-btn.open::before {
+    content: "\2715";
+}
+
+#primary-nav {
+    width: 100%;
+    display: none;
+}
+
+#primary-nav.open {
+    display: block;
+}
+
+#primary-nav ul {
+    list-style: none;
+    margin: 0.75rem 0 0 0;
+    padding: 0;
+}
+
+#primary-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    border-top: 1px solid var(--brown-dark);
+}
+
+#primary-nav a:hover,
+#primary-nav a:focus {
+    background-color: var(--brown-dark);
+    text-decoration: underline;
+}
+
+#primary-nav a.active {
+    background-color: var(--brown-dark);
+}
+
+main {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--brown-dark);
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 0.95rem;
+    color: var(--brown-dark);
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
