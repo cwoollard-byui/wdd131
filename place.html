@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Key facts and current weather for Manchester, England.">
+    <meta name="author" content="Charlie Woollard">
+    <title>Manchester, England - Charlie Woollard</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Manchester, England</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/manchester-desktop.webp" media="(min-width: 700px)">
+                <img src="images/manchester-mobile.webp" alt="View of Manchester, England" width="800" height="1200">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <p><span class="label">Population:</span> 552,000</p>
+                <p><span class="label">Region:</span> North West England</p>
+                <p><span class="label">Country:</span> United Kingdom</p>
+                <p><span class="label">Currency:</span> Pound Sterling (£)</p>
+                <p><span class="label">Language:</span> English</p>
+                <p><span class="label">Time Zone:</span> GMT (UTC+0)</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy" width="64" height="55">
+                <p><span class="label">Temperature:</span> 10 °C</p>
+                <p><span class="label">Conditions:</span> Partly Cloudy</p>
+                <p><span class="label">Wind:</span> 12 km/h</p>
+                <p><span class="label">Wind Chill:</span> <span id="windchill"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Charlie Woollard · Manchester, England</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
