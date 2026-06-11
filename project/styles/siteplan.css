@@ -1,0 +1,95 @@
+:root {
+    --brown: #4a3219;
+    --green: #356b3c;
+    --white: #ffffff;
+    --text: #1f1a13;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    color: var(--text);
+    font-family: 'Noto Serif', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+h1,
+h2 {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header p {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    margin: 0.5rem 0 0;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    color: var(--brown);
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--green);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.swatch {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.4rem;
+    vertical-align: text-bottom;
+}
+
+.swatch-brown {
+    background-color: var(--brown);
+}
+
+.swatch-green {
+    background-color: var(--green);
+}
+
+figure {
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
