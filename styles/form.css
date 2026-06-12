@@ -1,0 +1,167 @@
+:root {
+    --cream: #f4ecd9;
+    --purple: #4b2980;
+    --purple-deep: #2c1758;
+    --text: #1c1c1c;
+    --white: #ffffff;
+    --border: #b8a878;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+form,
+.confirmation {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+.note {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 1.25rem 0 0.4rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+fieldset {
+    margin: 1.25rem 0 0;
+    padding: 0.75rem 1rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+
+.rating label {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0 1rem 0 0.2rem;
+    cursor: pointer;
+}
+
+.features div {
+    margin-top: 0.5rem;
+}
+
+.features label {
+    display: inline;
+    font-weight: normal;
+    margin: 0;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: var(--purple);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--purple-deep);
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation h2 {
+    margin: 0 0 1rem;
+    color: var(--purple);
+}
+
+.confirmation p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 2.5rem 1.5rem;
+    }
+
+    form,
+    .confirmation {
+        padding: 2rem 2.5rem;
+    }
+}
