@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A beginner guide to family history research for people with English ancestry from 1837 onwards.">
+    <meta name="author" content="Charlie Woollard">
+    <title>Family History Beginners' Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="logo">Family History Beginners' Hub</p>
+        <button id="menu-btn" type="button" aria-label="Toggle navigation menu"></button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="getting-started.html">Getting Started</a></li>
+                <li><a href="request-help.html">Request Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the Hub</h1>
+
+        <section class="home-intro">
+            <div>
+                <h2>Why do family history?</h2>
+                <p>Family history gives names, places, and stories to the people who came before you. This guide is for
+                    beginners with English ancestry from 1837 onwards, when civil registration records began in England
+                    and Wales.</p>
+                <p>Start with what your family already knows, then use certificates and census records to move back one
+                    generation at a time.</p>
+            </div>
+            <img class="hero-image" src="images/census-1851.webp"
+                alt="Page from the 1851 census showing names and details written by hand" width="720" height="457">
+        </section>
+
+        <div class="action-links">
+            <a href="getting-started.html">Getting Started</a>
+            <a href="request-help.html">Request Help</a>
+        </div>
+
+        <section>
+            <h2>Records to know first</h2>
+            <div class="info-grid">
+                <article>
+                    <h3>Birth, marriage, and death records</h3>
+                    <p>The General Register Office has records for England and Wales from 1 July 1837. These records can
+                        connect a person to parents, spouses, places, and occupations.</p>
+                </article>
+                <article>
+                    <h3>Census records</h3>
+                    <p>Census records from 1841 to 1921 can place a family in a household on a certain night. They are a
+                        useful way to check ages, occupations, relationships, and birthplaces.</p>
+                </article>
+                <article>
+                    <h3>Parish records</h3>
+                    <p>If your research goes earlier than 1837, parish registers are usually the next place to look for
+                        baptisms, marriages, and burials.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Charlie Woollard</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

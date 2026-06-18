@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Simple steps for beginning English family history research with civil registration and census records.">
+    <meta name="author" content="Charlie Woollard">
+    <title>Getting Started - Family History Beginners' Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="logo">Family History Beginners' Hub</p>
+        <button id="menu-btn" type="button" aria-label="Toggle navigation menu"></button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="getting-started.html" class="active">Getting Started</a></li>
+                <li><a href="request-help.html">Request Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Getting Started</h1>
+
+        <section>
+            <h2>Start with one person</h2>
+            <p>Choose one ancestor who lived in England after 1837. Write down the name, approximate birth year, place,
+                spouse, children, and anything your family already knows. A small, focused question is easier to answer
+                than trying to research a whole tree at once.</p>
+        </section>
+
+        <section>
+            <h2>A simple research path</h2>
+            <div class="step-list">
+                <article>
+                    <span>1</span>
+                    <h3>Write what you know</h3>
+                    <p>Record family memories, certificates, photos, addresses, and dates. Note where each fact came
+                        from.</p>
+                </article>
+                <article>
+                    <span>2</span>
+                    <h3>Search an index</h3>
+                    <p>Use the GRO index or FreeBMD to find a birth, marriage, or death entry. Pay close attention to
+                        the registration district and quarter.</p>
+                </article>
+                <article>
+                    <span>3</span>
+                    <h3>Read the full record</h3>
+                    <p>A certificate can give names, places, occupations, and relationships that help you move back to
+                        the next generation.</p>
+                </article>
+                <article>
+                    <span>4</span>
+                    <h3>Check the census</h3>
+                    <p>Search census records to place the family together. Compare ages, birthplaces, and occupations
+                        with the certificate.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Choose a record type</h2>
+            <p>Use the menu to see which record might help with your current question.</p>
+            <label for="record-filter">Record type</label>
+            <select id="record-filter">
+                <option value="all">All records</option>
+                <option value="birth">Birth</option>
+                <option value="marriage">Marriage</option>
+                <option value="death">Death</option>
+                <option value="census">Census</option>
+            </select>
+            <div id="record-cards" class="record-cards"></div>
+        </section>
+
+        <figure class="wide-figure">
+            <img src="images/registration-districts.webp"
+                alt="Map showing Chertsey registration sub-districts used for the 1891 census" width="720" height="328"
+                loading="lazy">
+            <figcaption>Registration districts can help narrow down which person or family is the right one.
+            </figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Charlie Woollard</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

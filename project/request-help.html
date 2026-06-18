@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request help with a beginner English family history question from 1837 onwards.">
+    <meta name="author" content="Charlie Woollard">
+    <title>Request Help - Family History Beginners' Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="logo">Family History Beginners' Hub</p>
+        <button id="menu-btn" type="button" aria-label="Toggle navigation menu"></button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="getting-started.html">Getting Started</a></li>
+                <li><a href="request-help.html" class="active">Request Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <h1>Request Help</h1>
+
+        <section>
+            <h2>Before you ask</h2>
+            <p>Good questions include a name, a place, an approximate date, and what you have already checked. This form
+                is for beginner questions about English ancestry from civil registration in 1837 onwards.</p>
+            <p id="saved-count"></p>
+        </section>
+
+        <form id="help-form" method="get" action="request-help.html">
+            <p class="note">* Required</p>
+
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="topic">Research Topic *</label>
+            <select id="topic" name="topic" required>
+                <option value="" disabled selected>Select a topic ...</option>
+                <option value="birth">Finding a birth record</option>
+                <option value="marriage">Finding a marriage record</option>
+                <option value="death">Finding a death record</option>
+                <option value="census">Using census records</option>
+                <option value="next">Choosing what to search next</option>
+            </select>
+
+            <fieldset>
+                <legend>What do you already have?</legend>
+                <div>
+                    <input type="checkbox" id="known-name" name="known-name" value="name">
+                    <label for="known-name">Full or partial name</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="known-date" name="known-date" value="date">
+                    <label for="known-date">Approximate date</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="known-place" name="known-place" value="place">
+                    <label for="known-place">Town, parish, or county</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="known-family" name="known-family" value="family">
+                    <label for="known-family">Parent, spouse, or child name</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Reply *</legend>
+                <input type="radio" id="reply-email" name="reply" value="email" required>
+                <label for="reply-email">Email</label>
+                <input type="radio" id="reply-notes" name="reply" value="notes">
+                <label for="reply-notes">Research notes</label>
+            </fieldset>
+
+            <label for="question">Main Question *</label>
+            <textarea id="question" name="question" rows="6" required></textarea>
+
+            <button type="submit">Send Request</button>
+        </form>
+
+        <section id="form-message" class="confirmation" hidden>
+            <h2>Request Saved</h2>
+            <p id="request-count"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Charlie Woollard</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
